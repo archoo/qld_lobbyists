@@ -1,0 +1,23 @@
+inspired by mlandauer 
+
+who was in turn inspired by http://foi-privacy.blogspot.com/2009/12/victorian-lobbyists-up-in-lights-nsw.html
+
+done on windows using..
+- python
+- sqlite3
+- xpdf tools
+
+once you have checked it out run these commands in order..
+- md assets
+- md data
+- download_pdfs.py
+- for %p in (assets/*.pdf) do pdftotext -layout %p
+- parse_pdfs.py
+- build_db.py
+
+you should end up with..
+- pdfs & text in assets folder
+- csvs in the data folder
+- qld_lobbyists.db in project folder
+
+enjoy..
